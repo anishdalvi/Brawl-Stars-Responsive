@@ -1,0 +1,871 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#logo img{
+    height: 35px;
+    margin-left: -10%;
+    
+}
+#logo p{
+    display: inline;
+    margin-left: -5%;
+}
+
+
+.menus{
+   
+    width: 400px;
+    margin-left:auto;
+   
+}
+
+.container-fluid a, .container-fluid a:focus{
+    color: white;
+    opacity: 0.9;
+    
+}
+.container-fluid p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container-fluid a:hover {
+    color: white;
+    opacity: 0.9;
+    
+}
+
+.nav-item a , .nav-item a:focus {
+    font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+.nav-item a:hover{
+    opacity: 1;
+    color: white;
+    
+}
+
+
+#active{
+    opacity: 1;
+    font-weight: 500;
+}
+
+
+
+#supercell{
+    font-family: 'Squada One', cursive;
+    text-transform:uppercase ;
+    letter-spacing: 1px;
+    font-size: 19px;
+
+}
+
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.4s ease-in-out;
+  }
+.scrolled-up{
+    transform:translateY(0); transition: all 0.1s ease-in-out;
+  }
+
+@media (max-width:991px){
+    .menus{
+        margin-left: 0;
+        
+    }
+
+    #logo img{
+        margin-left:-10%;
+
+    }
+}
+
+
+
+/* Carousel */
+
+
+.carousel img{
+    
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+@media (max-width:991px){
+    .carousel{
+        width: 100%;
+    }
+    .carousel img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        
+    }
+}
+
+@media (max-width:549px){
+    .carousel{
+        width: 100%;
+    }
+    .carousel img{
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        
+    }
+}
+
+
+/* Jumbotron */
+
+.jumbotron h1{
+    font-weight: 700;
+}
+
+#italic{
+    font-weight: 600;
+    font-style: italic;
+    
+}
+
+.viewmore{
+    color: rgb(255, 255, 255) !important;
+    background-color: #000 !important;
+    border-radius: 0 !important;
+    
+}
+
+.viewmore:hover{
+    color: black !important;
+    background-color: transparent !important;
+    transition: 0.6s !important;
+}
+
+.viewmore:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+@media (min-width:525px) and (max-width:679px)
+{
+    .jumbotron h1{
+        font-size:25px;
+    }
+
+    .jumbotron p , .jumbocol span{
+        font-size: 14px !important;
+    }
+    .jumbotron button{
+        font-size: 14px;
+    }
+
+    .jumbocol{
+        margin-top: 40px;
+    }
+
+    
+}
+
+@media (max-width:406px)
+{
+    .download-btn{
+        padding: 0.5px !important;
+        
+    }
+}
+
+
+@media (max-width:524px)
+{
+    .jumbotron h1{
+        font-size:20px;
+    }
+
+    .jumbotron p , .jumbocol span{
+        font-size: 12px !important;
+    }
+    .jumbotron button{
+        font-size: 12px;
+    }
+
+    .jumbocol{
+        margin-top: 20px;
+    }
+    
+}
+
+
+/*  Cards */
+
+
+.card-content{
+    width: 30%;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 10px;
+    
+}
+
+.custom-indicators button{
+    
+    width: 10px !important;
+    height: 10px !important; 
+    border-radius: 100% !important;
+    background-color: #1963ac !important;
+  }
+
+.foot-legendary{
+    background: #F0D81A !important;
+  }
+
+.legendary{
+    color: #F0D81A;
+    font-size: 18px !important; 
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.foot-super-rare{
+    background: #0374F5!important;
+  }
+
+.super-rare{
+    color: #3c8deb;
+    font-size: 18px !important; 
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.foot-common{
+    background: #C90338 !important;
+  }
+
+.common{
+    color: #f33769;
+    font-size: 18px !important; 
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 15px #444745;
+
+}
+
+
+@media (max-width:323px){
+    
+    
+    .legendary, .common, .super-rare{
+        font-size: 11px !important; 
+       
+    }
+}
+
+
+@media (max-width:549px){
+    
+    .card-content{
+        width: 50%;
+        
+    
+}
+
+}
+
+@media (min-width:324px) and (max-width:549px){
+
+    .legendary, .common, .super-rare{
+        font-size: 14px !important; 
+       
+    }
+
+    
+   
+
+
+}
+
+@media (min-width:550px) and (max-width:768px){
+   
+    .legendary, .common, .super-rare{
+        font-size: 11px !important; 
+       
+    }
+}
+
+/* Showcase 1 */
+
+.maintenance {
+    width: 60%;
+    box-shadow: 3px 3px 10px #0374F5;
+    margin-right: -5%;
+    border: 10px solid rgb(0, 0, 0);
+   
+    
+
+}
+
+.headshow{
+    color: #0374F5;
+    font-weight: 600;
+
+}
+
+.parashow{
+    color: #0083CB;
+    font-weight: 500;
+    
+}
+
+@media (max-width:767px)
+{
+    .maintenance{
+        width: 100%;
+    }
+}
+
+@media (min-width:1271px)
+{
+    .parashow{
+        width:70% ;
+    }
+}
+
+
+
+@media (min-width:769px) and (max-width:991px)
+{
+    .maintenance{
+        
+        width: 75%;
+        margin-right: -5%;
+        
+    }
+
+    .maintenance-content{
+        width: 100%;
+    }
+
+    .showcase1{
+        height: 60%;
+    }
+
+    .headshow{
+        font-size: 30px;
+    }
+
+    .parashow{
+        font-size: 13px;
+        
+    }
+}
+
+
+@media (min-width:991px) and (max-width:1270px)
+{
+    .showcase1{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+/* ShowCase 2 */
+
+.maintenance2 {
+    width: 60%;
+    box-shadow: 3px 3px 10px #0374F5;
+    margin-bottom: 20px;
+    border: 10px solid rgb(0, 0, 0);
+   
+}
+
+.parashow2{
+    color: #0083CB;
+    width: 115%;
+}
+
+.maintenance-content2{
+    margin-left: 4%;
+}
+
+@media (min-width:769px) and (max-width:821px)
+{   
+    .headshow{
+        font-size: 25px;
+        
+        
+    }
+    #headshow2{
+        
+       margin-bottom:15%;  
+        
+    }
+
+}
+
+@media (max-width:510px)
+{
+    .headshow{
+        font-size: 20px;
+        margin-bottom: -5%;
+        
+    }
+    .parashow, .parashow2{
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width:767px)
+{
+    .maintenance2{
+        width: 100%;
+        margin-right: -5%;
+    }
+
+    .maintenance-content2{
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        
+        
+    }
+
+    .parashow2{
+        width: 90%;
+        margin-left: auto;margin-right: auto;
+    }
+}
+
+
+
+
+@media (min-width:769px) and (max-width:991px)
+{
+    .parashow2{
+        font-size: 13px;
+        margin-top: -15% !important;
+        
+    }
+    .maintenance2{
+        
+        width: 75%;
+        height: 98%;
+        
+        
+    }
+
+    .maintenance-content2{
+        margin-left: 4%;
+    }
+}
+
+
+@media (max-width:767px)
+{
+    .maintenance2{
+        transform: translateY(80%);
+    }
+
+    .maintenance-content2{
+        transform: translateY(-150%);
+    }
+}
+
+
+@media (min-width:511px) and (max-width:577px)
+{
+    .maintenance2{
+        transform: translateY(80%);
+    }
+
+    .maintenance-content2{
+        transform: translateY(-130%);
+    }
+}
+
+@media (min-width:356px) and (max-width:396px)
+{
+    .maintenance2{
+        transform: translateY(90%);
+    }
+
+    .maintenance-content2{
+        transform: translateY(-110%);
+       
+    }
+}
+
+@media (min-width:299px) and (max-width:356px)
+{
+    .maintenance2{
+        transform: translateY(90%);
+
+    }
+
+    .maintenance-content2{
+        transform: translateY(-80%);
+       
+    }
+}
+
+
+
+/* Ratings */
+
+.cardrate:hover{
+    cursor:default;
+    box-shadow: none;
+}
+
+.starhead{
+    margin-top: 2%;
+}
+
+
+.wait{
+    padding-bottom: 2%;
+}
+
+
+.progress div{
+    background: rgb(5, 104, 5);
+    opacity: 0.8;
+    
+}
+
+.download-btn{
+    color:rgb(255, 255, 255) !important; 
+    border-radius: 100px !important;
+    border: 1px solid darkgreen !important;
+    background: darkgreen !important;
+}
+
+.download-btn:hover{
+    color:darkgreen !important;
+    background-color: rgb(255, 255, 255) !important;
+
+}
+
+.download-btn:active , .download-btn:focus {
+    outline:0 !important;
+    box-shadow: none !important;
+    /* color:black !important;
+    background-color: white !important;
+    border: 1px solid rgb(0, 0, 0) !important; */
+    color: rgb(255, 255, 255) !important;
+    background-color:darkgreen !important;
+}
+
+
+@media (min-width:525px) and (max-width:679px)
+{
+    .fst-italic{
+        font-size: 14px;
+    }
+
+    .progress{
+        height: 14px !important;
+    }
+
+    .inprog{
+        height: 14px !important;
+        margin-bottom: 2px;
+    }
+
+    .wait h5 {
+        font-size: 14px;
+    }
+    .wait em {
+        font-size: 12px  !important;
+    }
+    .rate-head, .rate-foot{
+        font-size: 14px;
+    }
+    .ratings{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:406px)
+{
+    .download-btn{
+        padding: 0.5px !important;
+        
+    }
+}
+
+
+@media (max-width:524px)
+{
+    .fst-italic{
+        font-size: 12px;
+    }
+
+    .progress{
+        height: 12px !important;
+    }
+    .progress span{
+        height: 12px !important;
+        display: none;
+    }
+    .wait h5 {
+        font-size: 12px;
+    }
+    .wait em {
+        font-size: 10px  !important;
+    }
+    .rate-head, .rate-foot{
+        font-size: 12px;
+    }
+    .ratings{
+        font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width:359px)
+{
+    .download-btn{
+        width: 30%;
+        padding: 0;
+    }
+
+    #down-btn{
+        font-size: 60%;
+        padding: 0;
+    }
+}
+
+@media (max-width:679px)
+{
+
+    .progress span{
+        height: 12px !important;
+        display: none;
+    }
+
+    .starhead{
+        margin-top:10px !important; 
+    }
+
+    .download-btn{
+        width: 20%;
+        
+    }
+
+    #down-btn{
+        font-size: 60%;
+    }
+}
+
+
+
+@media (max-width:472px)
+{
+    .fst-italic{
+        font-size: 10px;
+    }
+
+    .progress{
+        height: 10px !important;
+    }
+}
+@media (max-width:420px)
+{
+    .progress{
+        height: 20px !important;
+        
+    }
+}
+
+
+/* Community */
+
+.submit-btn{
+    margin-top: 15px;
+    width: 30%;
+    float:right;
+    border: 1px solid black !important;
+    border-radius: 20px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.submit-btn:hover{
+    border: 1px solid black !important;
+    color: rgb(0, 0, 0) !important;
+    background: rgb(255, 255, 255) !important;
+}
+
+.submit-btn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+form input:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid black !important;
+    
+}
+
+form{
+    margin-bottom: 100px;
+}
+
+
+
+
+@media (max-width:524px)
+{
+    
+    .head h1{
+        font-size: 20px;
+    }
+    .head h3{
+        font-size: 17px;
+    }
+
+    .form-label, .form-text{
+        font-size: 12px !important;
+    }
+
+    form input{
+        font-size: 12px !important;
+    }
+    
+    .submit-btn{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width:525px) and (max-width:679px)
+{
+    .fst-italic{
+        font-size: 14px;
+    }
+
+    .progress{
+        height: 14px !important;
+    }
+
+    .inprog{
+        height: 14px !important;
+        margin-bottom: 2px;
+    }
+
+    .wait h5 {
+        font-size: 14px;
+    }
+    .wait em {
+        font-size: 12px  !important;
+    }
+    .rate-head, .rate-foot{
+        font-size: 14px;
+    }
+    .ratings{
+        font-size: 25px;
+    }
+}
+
+
+
+/* footer */
+
+.footer{
+    position: absolute;
+    width: 100%;
+}
+
+.copysoc{
+    
+    padding-top: 2%;
+    padding-bottom: 10px;
+}
+
+.socials{
+    padding-bottom: 2%;
+   
+}
+.copyright{
+    opacity: 0.6;
+}
+
+.socials i{
+    margin-left: 25px;
+    font-size: 25px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.socials i:hover{
+    opacity: 1 !important;
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+    transition: 0.4s;
+}
+
+.copyright h5{
+    
+    font-size: 18px;
+}
+
+
+@media (max-width:524px){
+    .socials{
+        padding-top: 2%;
+    }
+    .socials i{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .copyright h5{
+        padding-top: 2%;
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width:525px) and (max-width:679px)
+{
+    .socials{
+        padding-top: 2%;
+    }
+    .socials i{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .copyright h5{
+        padding-top: 2%;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width:679px) and (max-width:991px)
+{
+    .socials{
+        padding-top: 2%;
+    }
+    .copyright h5{
+        padding-top: 2%;
+        font-size: 18px;
+    }
+}
